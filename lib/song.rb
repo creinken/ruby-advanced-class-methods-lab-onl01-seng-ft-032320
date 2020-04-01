@@ -26,7 +26,7 @@ class Song
   end
   
   def self.find_by_name(song_title)
-    Song.all.any?(song_title)
+    Song.all.name.any?(song_title)
   end
   
   def self.find_or_create_by_name(song_title)
